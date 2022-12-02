@@ -1,4 +1,15 @@
-<?php ob_start() ?>
+<?php ob_start();
+
+include "../func/fungsi.php";
+
+if (!isset($_SESSION["status_login"]) === true) {
+
+    # code...
+    header('location:../auth/login.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +47,3 @@
 </head>
 
 <body id="page-top">
-
-    <!-- include function -->
-    <?php include "../func/fungsi.php" ?>

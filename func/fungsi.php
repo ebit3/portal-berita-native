@@ -27,6 +27,7 @@ function login($data)
             # code...
             header('location: ../admin/index.php');
             $_SESSION['profile'] = $row;
+            $_SESSION['status_login'] = true;
         } else {
 
             # code...

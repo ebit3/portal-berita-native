@@ -4,6 +4,12 @@ ob_start();
 
 include "../func/fungsi.php";
 
+if (isset($_SESSION["status_login"]) === true) {
+
+    # code...
+    header('location:../admin/index.php');
+}
+
 if (isset($_POST['submit'])) {
 
     # code...
